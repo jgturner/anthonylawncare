@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  max-width: 100;
+}
+
+section {
+  overflow: hidden;
+}
+
+.scroll-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Optional: Add some spacing between the cards */
+  /* gap: 20px; */
+  padding: 10px 10px 20px 15px;
+}
+
+.col-md-4 {
+  min-width: 350px;
+  flex: 0 0 33.33% !important; /* Adjust the width of columns based on your desired layout */
+}
+
+.swipe-helper {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+.custom-font {
+  font-family: 'Staatliches', cursive;
+}
+
+.friendly {
+  font-family: 'Borel', cursive;
+
+  line-height: 0;
+}
+
+.friendly-reg {
+  font-family: 'Borel', cursive;
+  line-height: 0;
+}
+
+video {
+  border-radius: 25px !important;
+}
+
+#hero {
+  /* background: url('../imgs/hero-green.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  z-index: 2; */
+  min-height: 500px;
+  max-width: 100%;
+  color: #198754;
+}
+
+#hero h1 {
+  font-size: 350%;
+  line-height: 0.85;
+}
+
+#hero p {
+  font-size: 125%;
+}
+
+#hero a {
+  font-size: 125%;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 1000px;
+}
+
+section h3 {
+  font-size: 300%;
+  color: #333;
+}
+
+#reviews {
+  color: #333;
+}
+
+#services {
+  color: #333;
+}
+
+#more {
+  color: #333;
+}
+#step-1::before {
+  content: '1';
+  font-size: x-large;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #198754;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 999;
+  color: #fff;
+  font-weight: bold;
+  top: -8px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#step-2::before {
+  content: '2';
+  font-size: x-large;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #198754;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 999;
+  color: #fff;
+  font-weight: bold;
+  top: -8px;
+  left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#step-3::before {
+  content: '3';
+  font-size: x-large;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #198754;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 999;
+  color: #fff;
+  font-weight: bold;
+  top: -8px;
+  left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header {
+  position: relative;
+  z-index: 998;
+}
+
+/* .card-img {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+} */
+
+.card-img img {
+  transition: all 0.2s;
+}
+
+.card-img img:hover {
+  transform: scale(1.2);
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0px;
+  left: 8px;
+  z-index: 999;
+  background-color: #198754;
+  color: #fff;
+  padding: 15px;
+}
+
+.fa-star {
+  color: #f5ad01;
+}
+
+.fa-square-facebook {
+  color: #14a1f9;
+}
+
+.fa-google {
+  color: #e63224;
+}
+
+/* MEDIA QUERIES */
+/* Optional: Add some media query to prevent horizontal scrolling on larger screens */
+@media (min-width: 960px) {
+  .scroll-container {
+    overflow: hidden;
+  }
+  .horizontal-scroll {
+    overflow-x: auto;
+  }
+  .col-md-4 {
+    min-width: auto;
+  }
+
+  .review-label {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #hero h1 {
+    font-size: 1px;
+    line-height: 0.85;
+  }
+
+  .friendly {
+    font-family: 'Borel', cursive;
+    font-size: 28px;
+    line-height: 0;
+  }
+
+  .review-label {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #reviews {
+    /* margin-left: 35px; */
+  }
+
+  #hero h1 {
+    font-size: 36px;
+    line-height: 0.85;
+  }
+
+  #hero p {
+    font-size: 100%;
+  }
+
+  #hero a {
+    font-size: 100%;
+  }
+}
