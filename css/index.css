@@ -4,7 +4,7 @@
 }
 
 section {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .scroll-container {
