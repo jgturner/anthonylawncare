@@ -439,9 +439,15 @@
             </ul>
           </div>
 
-          <p class="mt-5 mb-2 text-center">© 2023 Anthony's Professional Services ⚒️🍃</p>
+          <p class="mt-5 mb-2 text-center">© <span class="copy_date"></span> Anthony's Professional Services ⚒️🍃</p>
         </div>
       </div>
     </footer>
+
+    <script>
+      const date = new Date();
+      console.log(date);
+      document.querySelector('.copy_date').textContent += ` ${date.getFullYear()}`;
+    </script>
   </body>
 </html>
